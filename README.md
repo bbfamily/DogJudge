@@ -641,6 +641,8 @@ print 'probabilities rank {} label is {}'.format(rank, class_map[class_map['clas
 ## 如果有什么问题可以加阿布的微信 
 ## 微信号：aaaabbbuu
 
+![image](./mmexport1475383814280.jpg)
+
 
 ```python
 
