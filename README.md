@@ -3,7 +3,7 @@
 
 ### tag:
 ______
-
+python
 selenium
 PhantomJS
 sklearn
@@ -12,7 +12,7 @@ caffe
 
 #### caffe的安装等配置请自行查阅，可以先只编译一个only cpu的
 #### git代码地址：https://github.com/bbfamily/DogJudge
-#### 如有任何问题加微信联系微信号：aaaabbbuu
+#### 如有任何问题加微信联系 微信号：**aaaabbbuu**
 
 ## 1. 代理获取
 
