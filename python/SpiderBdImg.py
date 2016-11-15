@@ -16,6 +16,7 @@ import numpy as np
 import random
 from sklearn.externals.joblib import Parallel
 from sklearn.externals.joblib import delayed
+from concurrent.futures import ThreadPoolExecutor
 """
 from ProcessMonitor import add_process_wrapper
 代码地址：https://github.com/bbfamily/monitor_parallel
@@ -25,7 +26,6 @@ from ProcessMonitor import add_process_wrapper
 g_enable_monitor = False
 if g_enable_monitor:
     from ProcessMonitor import add_process_wrapper
-    from concurrent.futures import ThreadPoolExecutor
 
 __author__ = 'BBFamily'
 
