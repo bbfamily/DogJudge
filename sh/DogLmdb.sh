@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # /usr/bin/env sh
 echo "Begin..."
 ROOTFOLDER=../gen/baidu/image/
