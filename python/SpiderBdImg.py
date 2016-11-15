@@ -20,10 +20,12 @@ from sklearn.externals.joblib import delayed
 from ProcessMonitor import add_process_wrapper
 代码地址：https://github.com/bbfamily/monitor_parallel
 
-如不需要控制多进程可以注释掉
+如需要控制多进程可以打开, 并且把do_spider上的add_process_wrapper装饰器的注释删除
 """
-from ProcessMonitor import add_process_wrapper
-from concurrent.futures import ThreadPoolExecutor
+g_enable_monitor = False
+if g_enable_monitor:
+    from ProcessMonitor import add_process_wrapper
+    from concurrent.futures import ThreadPoolExecutor
 
 __author__ = 'BBFamily'
 
@@ -53,7 +55,7 @@ K_COLLECT_CNT = 2000
 K_COLLECT_PROCESS_CNT = 3
 
 
-@add_process_wrapper
+# @add_process_wrapper
 def do_spider(proxy, back_proxys, search_name):
     """
     from ProcessMonitor import add_process_wrapper
@@ -70,7 +72,7 @@ def do_spider(proxy, back_proxys, search_name):
     bd_img.search_img_by_name(search_name)
 
 
-@add_process_wrapper
+# @add_process_wrapper
 def do_spider_parallel(proxy_df, ind, search_name):
     """
     from ProcessMonitor import add_process_wrapper
