@@ -1,9 +1,9 @@
 # /usr/bin/env sh
-echo "Begin...."
+echo "Begin train...."
 
-CAFEBIN=/Users/Bailey/caffe/build/tools/caffe
+CAFEBIN=/root/caffe/build/tools/caffe
 SOLVER=../pb/solver.prototxt
 $CAFEBIN train -solver $SOLVER
 
 
-echo "Done"
+echo "Done train..."

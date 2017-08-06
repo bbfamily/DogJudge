@@ -10,10 +10,10 @@ layer {
   transform_param {
     mirror: true
     crop_size: 224
-    mean_file: "/Users/Bailey/Desktop/my_work/DogJudge/gen/dog_judge/mean.binaryproto"
+    mean_file: "/root/maxmon/DogJudge/gen/dog_judge/mean.binaryproto"
   }
   data_param {
-    source: "/Users/Bailey/Desktop/my_work/DogJudge/gen/dog_judge/img_train_lmdb"
+    source: "/root/maxmon/DogJudge/gen/dog_judge/img_train_lmdb"
     batch_size: 32
     backend: LMDB
   }
@@ -29,10 +29,10 @@ layer {
   transform_param {
     mirror: false
     crop_size: 224
-    mean_file: "/Users/Bailey/Desktop/my_work/DogJudge/gen/dog_judge/mean_val.binaryproto"
+    mean_file: "/root/maxmon/DogJudge/gen/dog_judge/mean_val.binaryproto"
   }
   data_param {
-    source: "/Users/Bailey/Desktop/my_work/DogJudge/gen/dog_judge/img_val_lmdb"
+    source: "/root/maxmon/DogJudge/gen/dog_judge/img_val_lmdb"
     batch_size: 50
     backend: LMDB
   }
@@ -910,7 +910,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 1000
+    num_output: 6
     weight_filler {
       type: "xavier"
     }
@@ -1673,7 +1673,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 1000
+    num_output: 6
     weight_filler {
       type: "xavier"
     }
@@ -2386,7 +2386,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 1000
+    num_output: 6
     weight_filler {
       type: "xavier"
     }

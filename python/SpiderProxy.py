@@ -13,6 +13,9 @@ from Decorator import warnings_filter
 __author__ = 'BBFamily'
 
 
+"""是否开启代理"""
+g_proxy_enable = False
+
 class SpiderProxy(object):
     @classmethod
     def read_csv(cls):

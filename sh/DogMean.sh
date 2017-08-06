@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 # /usr/bin/env sh
-echo "Begin..."
+echo "Begin mean..."
 
 LMDB=../gen/dog_judge/img_train_lmdb
-MEANBIN=/Users/Bailey/caffe/build/tools/compute_image_mean
+MEAN_BIN=/root/caffe/build/tools/compute_image_mean
 OUTPUT=../gen/dog_judge/mean.binaryproto
 
 echo $OUTPUT
 
-$MEANBIN $LMDB $OUTPUT
+$MEAN_BIN $LMDB $OUTPUT
 
 LMDB=../gen/dog_judge/img_val_lmdb
 OUTPUT=../gen/dog_judge/mean_val.binaryproto
 echo $OUTPUT
-$MEANBIN $LMDB $OUTPUT
+$MEAN_BIN $LMDB $OUTPUT
 
-echo "Done.."
+echo "Done mean..."

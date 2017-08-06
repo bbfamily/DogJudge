@@ -1,4 +1,4 @@
-net: "/Users/Bailey/Desktop/my_work/DogJudge/pb/train_val.prototxt"
+net: "/root/maxmon/DogJudge/pb/train_val.prototxt"
 test_iter: 20
 test_interval: 1000
 test_initialization: false
@@ -12,5 +12,5 @@ max_iter: 2000000
 momentum: 0.9
 weight_decay: 0.0002
 snapshot: 5000
-snapshot_prefix: "/Users/Bailey/Desktop/my_work/DogJudge/gen/dog_judge/dog_judge_train"
+snapshot_prefix: "/root/maxmon/DogJudge/gen/dog_judge/dog_judge_train"
 solver_mode: CPU

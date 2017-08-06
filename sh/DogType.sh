@@ -11,21 +11,21 @@ DB=${DATA}/杜宾
 OUTPUT=../gen/dog_judge
 mkdir $OUTPUT
 
-echo "Create train.txt..."
-rm -rf $OUTPUT/train.txt
+echo "Create data.txt..."
+rm -rf $OUTPUT/data.txt
 
-find $HASHIQI -name *.jpeg | cut -d '/' -f 5,6 | sed "s/$/ 1/">>$OUTPUT/train.txt
+find $HASHIQI -name *.jpeg | cut -d '/' -f 5,6 | sed "s/$/ 1/">>$OUTPUT/data.txt
 find $LALA -name *.jpeg | cut -d '/' -f 5,6 | sed "s/$/ 2/">>$OUTPUT/lala.txt
 find $BM -name *.jpeg | cut -d '/' -f 5,6 | sed "s/$/ 3/">>$OUTPUT/bm.txt
 find $CQ -name *.jpeg | cut -d '/' -f 5,6 | sed "s/$/ 4/">>$OUTPUT/cq.txt
 find $DM -name *.jpeg | cut -d '/' -f 5,6 | sed "s/$/ 5/">>$OUTPUT/dm.txt
 find $DB -name *.jpeg | cut -d '/' -f 5,6 | sed "s/$/ 6/">>$OUTPUT/db.txt
 
-cat $OUTPUT/lala.txt>>$OUTPUT/train.txt
-cat $OUTPUT/bm.txt>>$OUTPUT/train.txt
-cat $OUTPUT/cq.txt>>$OUTPUT/train.txt
-cat $OUTPUT/dm.txt>>$OUTPUT/train.txt
-cat $OUTPUT/db.txt>>$OUTPUT/train.txt
+cat $OUTPUT/lala.txt>>$OUTPUT/data.txt
+cat $OUTPUT/bm.txt>>$OUTPUT/data.txt
+cat $OUTPUT/cq.txt>>$OUTPUT/data.txt
+cat $OUTPUT/dm.txt>>$OUTPUT/data.txt
+cat $OUTPUT/db.txt>>$OUTPUT/data.txt
 
 rm -rf $OUTPUT/lala.txt
 rm -rf $OUTPUT/bm.txt
@@ -33,4 +33,4 @@ rm -rf $OUTPUT/cq.txt
 rm -rf $OUTPUT/dm.txt
 rm -rf $OUTPUT/db.txt
 
-echo "train.txt Done.."
+echo "data.txt Done.."
